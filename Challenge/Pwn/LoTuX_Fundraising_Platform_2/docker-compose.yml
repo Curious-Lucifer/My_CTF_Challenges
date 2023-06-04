@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  pwn-lotux_fundraising_platform_2:
+    build: ./
+    volumes:
+      - ./share:/home/chal:ro
+      - ./xinetd:/etc/xinetd.d/chal:ro
+    ports:
+      - 10004:10004
