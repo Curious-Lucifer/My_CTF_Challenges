@@ -1,0 +1,32 @@
+.rules-container {
+  width: 480px;
+  padding: 20px 26px;
+  border: 0.3px solid #999;
+  border-radius: 12px;
+}
+
+h5 {
+  margin: 16px 0 18px;
+}
+
+hr {
+  border: 0.3px solid #999;
+}
+
+p {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+ol {
+  list-style-position: inside;
+  font-size: 12px;
+}
+
+ol>li {
+  margin-bottom: 16px;
+}
+
+code {
+  color: #bbb;
+}

@@ -1,0 +1,15 @@
+name: "Simple URLEncode Machine"
+description: |
+  This is a really simple urlencode machine, it will urlencode everything you input ...Right ?
+flag: "AIS3{S1mpL3_uR!En(0D3_M4ch1ne_wI7h_$1mPl3_E/pl0i%_7echn1qU#!!!}"
+author: Curious
+port: 50005
+tags:
+  - medium
+  - pwn
+canonical_name: simple-urlencode-machine
+compose: ./chal/docker-compose.yml
+distfiles:
+  - ./chal/
+  - ./dist/
+

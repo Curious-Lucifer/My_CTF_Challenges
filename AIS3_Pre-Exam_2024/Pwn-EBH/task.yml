@@ -1,0 +1,16 @@
+name: "EBH"
+description: |
+  shellcoding is Easy, But kernel is Hard ...
+  Tips : 這題不需要去分析 Web 的部分，先閱讀使用說明並跟著使用範例做一次就會明白 Web 在做什麼了
+flag: "AIS3{Oh_n0_1_fOrg37_%O_`iounmap`,_T_Wi|l_r3m*MbEr_i7_Ne/t_t1m#_QAQ}"
+author: Curious
+port: 50006
+tags:
+  - hard
+  - pwn
+canonical_name: ebh
+compose: ./chal/docker-compose.yml
+distfiles:
+  - ./chal/
+  - ./dist/
+

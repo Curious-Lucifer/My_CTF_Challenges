@@ -1,0 +1,19 @@
+BASEDIR = '/home/user/web'
+
+# Database
+DATABASE = '/home/user/web/EBH.db'
+
+# Users
+USER_EXPIRED_TIME = 1800
+CLEAN_EXPIRED_USERS_PER = 100
+
+# PoW
+POW_EXPIRED_TIME = 600
+CLEAN_EXPIRED_POW_PER = 1000
+POW_PREFIX_LENGTH = 16
+POW_DIFFICULTY = 20
+
+# Challenge
+CHALLENGE_UPLOAD_PATH = '/home/user/web/uploads'
+CHALLENGE_RUNNING_TIME = 90
+CHALLENGE_ENTRY_PATH = '/home/user/challenge/run.sh'

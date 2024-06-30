@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  pwn-ebh:
+    build: ./
+    ports:
+      - 50006:5000

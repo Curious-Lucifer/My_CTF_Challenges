@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBH</title>
+    <link rel="stylesheet" href="/static/style/index.css">
+  </head>
+  <body>
+    <h1 class="text-center"><a href="/">EBH Control Panel</a></h1>
+    <h4 class=text-center><a href="/usage">使用說明</a></h4>
+    <div class="flex justify-content-center">
+      <div class="container" id="pow-container">
+        <h2 class="text-center">PoW</h2>
+        <form id="pow-form">
+          <div>
+            <label for="pow-prefix">Prefix&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+            <input type="text" name="pow-prefix" id="pow-prefix" disabled>
+          </div>
+          <div>
+            <label for="pow-difficulty">Difficulty&nbsp;:</label>
+            <input type="text" name="pow-difficulty" id="pow-difficulty" disabled>
+          </div>
+          <div>
+            <label for="pow-lefttime">Left Time&nbsp;&nbsp;:</label>
+            <input type="text" name="pow-lefttime" id="pow-lefttime" disabled>
+          </div>
+          <div>
+            <label for="pow-answer">Answer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+            <input type="text" name="pow-answer" id="pow-answer" autocomplete="off">
+          </div>
+          <div id="pow-calculate-loading-container" class="loading-container">
+            <img src="/static/img/loading.png" alt="Calculating" width="17.5" height="17.5">
+          </div>
+          <button id="pow-calculate-btn" type="button">Calculate</button>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="container" id="challenge-container">
+        <h2 class="text-center">Challenge</h2>
+        <form id="challenge-form">
+          <div>
+            <label for="challenge-file">Upload : </label>
+            <input type="file" id="challenge-file" name="challenge-file">
+          </div>
+          <div id="challenge-running-container" class="loading-container">
+            <img src="/static/img/loading.png" alt="Calculating" width="17.5" height="17.5">
+            <span id="challenge-running-counter">60</span>
+          </div>
+          <button id="challenge-submit-btn" type="submit">Submit</button>
+        </form>
+        <div id="result-container">
+          <hr>
+          <h2 class="text-center">Result</h2>
+          <pre id="challenge-result"></pre>
+        </div>
+        <button type="button" id="restart-btn">Try Again</button>
+      </div>
+    </div>
+
+    <script src="/static/js/challenge.js"></script>
+    <script src="/static/js/pow.js"></script>
+    <script src="/static/js/index.js"></script>
+  </body>
+</html>

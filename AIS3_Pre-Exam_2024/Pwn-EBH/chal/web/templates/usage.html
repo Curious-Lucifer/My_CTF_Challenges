@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBH</title>
+    <link rel="stylesheet" href="/static/style/index.css">
+    <link rel="stylesheet" href="/static/style/usage.css">
+  </head>
+  <body>
+    <h1 class="text-center"><a href="/">EBH Control Panel</a></h1>
+    <h4 class="text-center"><a href="/usage">使用說明</a></h4>
+    <div class="flex justify-content-center">
+      <div class="rules-container">
+        <p>這題不需要去分析 Web 的部分。Web 的部分簡單來講就是讓你上傳一個 binary，然後把這個 binary 在 QEMU 裡面跑的結果回傳給你。</p>
+        <hr>
+        <h5 class="text-center">使用範例</h5>
+        <ol>
+          <li>寫好一個檔案叫做 <a href="/example.c">example.c</a> <- 這是鏈結</li>
+          <li>在 x86 架構的電腦編譯 <code>gcc -static example.c -o example</code></li>
+          <li>進入 EBH Control Panel 後按 Calculate 計算 PoW</li>
+          <li>等待計算完成後網頁會自動把 PoW 的答案填入 Answer 欄，按下 Submit</li>
+          <li>接著上傳 <code>example</code> 並 Submit</li>
+          <li>等待 Challenge 跑完後網頁會顯示結果，正常情況下結果應該會顯示 <code>Hello EBH !</code></li>
+          <li>如果想要重新上傳一個 binary 的話按下 Try Again 就可以重新來一遍了</li>
+          <li>如果 30 分鐘都沒有重新整理或 Try Again 的話 uid 就會過期，所以如果覺得怪怪的就重新整理看看</li>
+        </div>
+      </ol>
+    </div>
+  </body>
+</html>
